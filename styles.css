@@ -1,0 +1,97 @@
+:root {
+    --background-color: hsl(0, 100%, 95%);
+    --accent-color: rgba(199, 43, 23, 90%);
+    --accent-color2: rgb(114, 203, 255);
+    --button-color: rgb(151, 36, 36);
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(
+        to bottom,
+        var(--accent-color),
+        var(--accent-color),
+        var(--background-color),
+        var(--accent-color2)
+    
+    );
+    
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background-color);
+
+}
+
+.navBar{
+    min-width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    background-color: rgb(151, 36, 36);
+    margin-bottom: 10px;
+}
+
+.navBar h1 {
+    color: white;
+    position: relative;
+    left: 20px;
+}
+
+.inputSection, .summarySection {
+    margin: 0;
+    background-color: aliceblue;
+    padding: 10px 25px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.inputSection h3 {
+    text-align: center;
+}
+
+.tempType {
+    margin: 10px 0px 15px 0px;
+}
+
+h1 {
+    font-size: clamp(1rem, calc(7vw + 1rem), 2rem);
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.tempType button {
+    font-size: .8rem;
+    width: 100%;
+    color: aliceblue;
+    font-family: "Poppins";
+    border: none;
+    padding: 10px  15px;
+    border-radius: 20px;
+    background-color: var(--button-color);
+}
+
+button:hover {
+    cursor: pointer;
+    scale: 1.05;
+    transition: 150ms ease-in-out;
+    box-shadow: 0px 3px 5px rgb(182, 182, 182);
+}
+
+#tempValue {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins";
+    margin: 0;
+    padding: 10px 15px;
+    border: none;
+    margin: 0px 0px 5px 5px;
+
+}

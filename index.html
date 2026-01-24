@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature-Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="navBar">
+        <h1>Temperature Converter</h1>
+
+    </div>
+    <div class="inputSection">
+        <h3>Value to convert</h3>
+        <input type="text" id="tempValue" placeholder="Enter a value e.g (25, 50, 100)">
+        <div class="tempType">
+            <label for=""><input type="radio" name="temperature" id="CF">Celsius -> Fahrenheit</label><br>
+            <label for=""><input type="radio" name="temperature" id="CK">Celsius -> Kelvin</label><br>
+            <label for=""><input type="radio" name="temperature" id="FC">Fahrenheit -> Celsius</label><br>
+            <label for=""><input type="radio" name="temperature" id="FK">Fahrenheit -> Kelvin</label><br>
+            <label for=""><input type="radio" name="temperature" id="KC">Kelvin -> Celsius</label><br>
+            <label for=""><input type="radio" name="temperature" id="KF">Kelvin -> Fahrenheit</label><br>
+            <br>
+            <button id="submitBtn">Submit</button>
+        </div>
+        
+    </div>
+    <div class="summarySection" id="summarySection">
+        <h3>Summary</h3>
+        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
