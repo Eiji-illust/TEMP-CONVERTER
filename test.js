@@ -32,7 +32,3 @@ class TemperatureConverter {
 
     }
 }
-
-submitBtn.onclick = function(temperature) {
-    if 
-}
