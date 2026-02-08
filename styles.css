@@ -1,8 +1,8 @@
 :root {
     --background-color: hsl(0, 100%, 95%);
-    --accent-color: rgba(199, 43, 23, 90%);
-    --accent-color2: rgb(114, 203, 255);
-    --button-color: rgb(151, 36, 36);
+    --accent-color: rgba(78, 154, 216, 0.9);
+    --accent-color2: rgb(26, 63, 85);
+    --button-color: rgb(25, 45, 87);
 }
 
 body {
@@ -13,12 +13,10 @@ body {
     flex-direction: column;
     align-items: center;
 
-    background: linear-gradient(
-        to bottom,
-        var(--accent-color),
-        var(--accent-color),
-        var(--background-color),
-        var(--accent-color2)
+    background: radial-gradient(
+        circle at top,
+        var(--accent-color) 0%,
+        var(--accent-color2) 100%
     
     );
     
@@ -31,13 +29,13 @@ body {
 .navBar{
     min-width: 100%;
     border-radius: 0px 0px 10px 10px;
-    background-color: rgb(151, 36, 36);
+    background-color: var(--button-color);
     margin-bottom: 10px;
 }
 
 .navBar h1 {
     color: white;
-    position: relative;
+    text-align: center;
     left: 20px;
 }
 
@@ -57,6 +55,20 @@ body {
     margin: 10px 0px 15px 0px;
 }
 
+#tempType {
+    display: flex;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+
+    min-width: 100%;
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-family: "Poppins", sans-serif;
+}
+
 h1 {
     font-size: clamp(1rem, calc(7vw + 1rem), 2rem);
     text-align: center;
@@ -65,9 +77,42 @@ h1 {
 h3 {
     margin: 0;
     text-align: center;
+    margin-bottom: 10px;
 }
 
-.tempType button {
+fieldset {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+header {
+    margin: 0 auto;
+    width: 100%;
+}
+
+legend {
+    color: gray;
+    font-size: clamp(.5rem, calc(3vw + .5rem), .75rem);
+}
+
+option {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+
+    font-size: clamp(.75rem, calc(3vw + .5rem), .8rem);
+    
+}
+
+select {
+    border: gray .5px solid;
+    accent-color: gray;
+}
+
+button {
     font-size: .8rem;
     width: 100%;
     color: aliceblue;
@@ -80,7 +125,7 @@ h3 {
 
 button:hover {
     cursor: pointer;
-    scale: 1.05;
+    scale: 1.02;
     transition: 150ms ease-in-out;
     box-shadow: 0px 3px 5px rgb(182, 182, 182);
 }
@@ -89,9 +134,9 @@ button:hover {
     display: flex;
     flex-direction: column;
     font-family: "Poppins";
-    margin: 0;
-    padding: 10px 15px;
+    margin: 0 auto;
+    /* padding: 10px 15px; */
     border: none;
-    margin: 0px 0px 5px 5px;
+    /* margin: 0px 0px 5px 0px; */
 
 }
