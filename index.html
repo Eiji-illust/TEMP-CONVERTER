@@ -22,40 +22,42 @@
     </header>
     <main>
         <div class="inputSection">
-            <h3>Value to convert</h3>
-            <fieldset>
-                <legend>Current Temp</legend>
-                <input type="text" id="tempValue" placeholder="Enter a value e.g (25, 50, 100)">
-            </fieldset>
-            
-            <select name="" id="tempType">
-                <option name="temperature" value="CF">Celsius to Kelvin</option>
-                <option name="temperature" value="CK">Celsius to Fahrenheit</option>
-                <option name="temperature" value="FC">Fahrenheit to Celsius</option>
-                <option name="temperature" value="FK">Fahrenheit to Kelvin</option>
-                <option value="KC">Kelvin to Celsius</option>
-                <option value="KF">Kelvin to Fahrenheit</option>
-            </select>
-            <!-- <div class="tempType">
-                <label for=""><input type="radio" name="temperature" id="CF">Celsius -> Fahrenheit</label><br>
-                <label for=""><input type="radio" name="temperature" id="CK">Celsius -> Kelvin</label><br>
-                <label for=""><input type="radio" name="temperature" id="FC">Fahrenheit -> Celsius</label><br>
-                <label for=""><input type="radio" name="temperature" id="FK">Fahrenheit -> Kelvin</label><br>
-                <label for=""><input type="radio" name="temperature" id="KC">Kelvin -> Celsius</label><br>
-                <label for=""><input type="radio" name="temperature" id="KF">Kelvin -> Fahrenheit</label><br>
-                <br>
-            </div> -->
-            
-            <button type="submit" id="submitBtn">Submit</button>
+            <!-- <form action=""> -->
+                <h3>Value to convert</h3>
+                <fieldset>
+                    <legend>Current Temp</legend>
+                    <input type="number" id="tempValue" placeholder="Enter a value e.g (25, 50, 100)" required>
+                </fieldset>
+                
+                <select name="" id="tempType">
+                    <option name="temperature" value="CF">Celsius to Kelvin</option>
+                    <option name="temperature" value="CK">Celsius to Fahrenheit</option>
+                    <option name="temperature" value="FC">Fahrenheit to Celsius</option>
+                    <option name="temperature" value="FK">Fahrenheit to Kelvin</option>
+                    <option name="temperature" value="KC">Kelvin to Celsius</option>
+                    <option name="temperature" value="KF">Kelvin to Fahrenheit</option>
+                </select>
+                <!-- <div class="tempType">
+                    <label for=""><input type="radio" name="temperature" id="CF">Celsius -> Fahrenheit</label><br>
+                    <label for=""><input type="radio" name="temperature" id="CK">Celsius -> Kelvin</label><br>
+                    <label for=""><input type="radio" name="temperature" id="FC">Fahrenheit -> Celsius</label><br>
+                    <label for=""><input type="radio" name="temperature" id="FK">Fahrenheit -> Kelvin</label><br>
+                    <label for=""><input type="radio" name="temperature" id="KC">Kelvin -> Celsius</label><br>
+                    <label for=""><input type="radio" name="temperature" id="KF">Kelvin -> Fahrenheit</label><br>
+                    <br>
+                </div> -->
+                
+                <button type="submit" id="submitBtn">Submit</button>
+            <!-- </form> -->
         </div>
         <div class="summarySection" id="summarySection">
-            <h3>Summary</h3>
+            <!-- <h3>Summary</h3> -->
             
         </div>
     </main>
     <footer>
         <hr>
-        <p>Copyright 2026</p>
+        <p style="color: white;">Copyright 2026</p>
     </footer>
 
     <script src="test.js"></script>

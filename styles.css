@@ -5,6 +5,12 @@
     --button-color: rgb(25, 45, 87);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
 body {
     margin: 0;
     min-height: 100vh;
@@ -20,23 +26,34 @@ body {
     
     );
     
-    font-size: 1rem;
+    font-size: 1em;
     font-family: "Poppins", sans-serif;
     background-color: var(--background-color);
 
 }
 
+header {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 100%;
+    background: var(--button-color);
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    border-radius: 0px 0px 10px 10px;
+}
+
 .navBar{
     min-width: 100%;
-    border-radius: 0px 0px 10px 10px;
-    background-color: var(--button-color);
     margin-bottom: 10px;
 }
 
 .navBar h1 {
     color: white;
-    text-align: center;
-    left: 20px;
 }
 
 .inputSection, .summarySection {
@@ -83,12 +100,10 @@ h3 {
 fieldset {
     border-radius: 10px;
     margin-bottom: 10px;
+    padding: 5px;
+    overflow: hidden;
 }
 
-header {
-    margin: 0 auto;
-    width: 100%;
-}
 
 legend {
     color: gray;
@@ -135,7 +150,7 @@ button:hover {
     flex-direction: column;
     font-family: "Poppins";
     margin: 0 auto;
-    /* padding: 10px 15px; */
+    padding: 10px 20px;
     border: none;
     /* margin: 0px 0px 5px 0px; */
 
