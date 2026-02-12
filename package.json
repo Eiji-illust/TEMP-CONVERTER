@@ -1,0 +1,23 @@
+{
+  "name": "temp-converter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eiji-illust/TEMP-CONVERTER.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eiji-illust/TEMP-CONVERTER/issues"
+  },
+  "homepage": "https://github.com/Eiji-illust/TEMP-CONVERTER#readme",
+  "description": "",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
